@@ -1,0 +1,64 @@
+<!--index.wxml-->
+
+<!-- search section-->
+<view class= "search_section">  
+  <view class="search_input">  
+    <view class="search_arr">  
+      <icon class="" size='20' type='search'></icon>  
+      <input class="" placeholder="请输入关键字"/>  
+    </view>  
+  </view>  
+  <view class='search_button'>搜索</view>  
+</view> 
+
+<!-- menu section-->
+<view class = "menu_section">
+  <view class="menu_outer">
+    <view class="menu_inner" style="flex-direction: row">
+        <image class="menu_item menu_item1" src='/images/school.png' ></image>
+        <image class="menu_item menu_item1" src='/images/electronics.png' ></image>
+        <image class="menu_item menu_item1" src='/images/furniture.png' ></image>
+        <image class="menu_item menu_item1" src='/images/car.png' ></image>
+        <image class="menu_item menu_item1" src='/images/game.png' ></image>
+    </view>
+    <view class="menu_inner" style="flex-direction: row">
+        <text class = "menu_name menu_name1">学习</text>
+        <text class = "menu_name menu_name2">电器</text>
+        <text class = "menu_name menu_name3">家具</text>
+        <text class = "menu_name menu_name4">汽车</text>
+        <text class = "menu_name menu_name5">娱乐</text>
+    </view>
+  </view>
+
+    
+</view> 
+
+<!-- swiper section-->
+<view class = "swiper_section">  
+  <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" duration="{{duration}}" circular="{{circular}}">  
+    <block wx:for="{{background}}" wx:key="{{index}}">  
+      <swiper-item >  
+        <view class="swiper-item {{item}}"></view> 
+      </swiper-item>  
+    </block>  
+  </swiper>  
+</view>  
+
+<!-- items section-->
+<view class ="items_section">
+
+  <view class="items_wrapper" style="flex-direction: row">
+    <view class="items_left" style="flex-direction: row">
+      <view class >
+
+      </view>
+
+    </view>
+
+    <view class="items_right" style="flex-direction: row">
+    </view>
+
+  </view>
+
+</view>
+  
