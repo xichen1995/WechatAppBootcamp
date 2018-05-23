@@ -1,31 +1,80 @@
 <!--index.wxml-->
 
-<!-- search_bar section-->
-<view class= "search_section" bindtap="suo">  
+<!-- search section-->
+<view class= "search_section">  
   <view class="search_input">  
-    <view class="df search_arr">  
+    <view class="search_arr">  
       <icon class="" size='20' type='search'></icon>  
-      <input class="" placeholder="请输入关键字" value="{{searchValue}}"/>  
+      <input class="" placeholder="请输入关键字"/>  
     </view>  
   </view>  
   <view class='search_button'>搜索</view>  
 </view> 
 
+<!-- menu section-->
 <view class = "menu_section">
+  <view class="menu_outer">
+    <view class="menu_inner" style="flex-direction: row">
+        <view class="menu_item menu_item1"></view>
+        <view class="menu_item menu_item2"></view>
+        <view class="menu_item menu_item3"></view>
+        <view class="menu_item menu_item4"></view>
+        <view class="menu_item menu_item5"></view>
+    </view>
+    <view class="menu_inner" style="flex-direction: row">
+        <text class = "menu_name menu_name1">学习</text>
+        <text class = "menu_name menu_name2">电器</text>
+        <text class = "menu_name menu_name3">家具</text>
+        <text class = "menu_name menu_name4">汽车</text>
+        <text class = "menu_name menu_name5">娱乐</text>
+    </view>
+  </view>
 
+    
 </view> 
-
-
 
 <!-- swiper section-->
 <view class = "swiper_section">  
-<swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" duration="{{duration}}"
-  circular="{{circular}}" style="height:{{imgheights[current]}}rpx;">  
-    <block wx:for="{{imgUrls}}" wx:key="{{index}}">  
+  <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" duration="{{duration}}" circular="{{circular}}">  
+    <block wx:for="{{background}}" wx:key="{{index}}">  
       <swiper-item >  
-        <image src="{{item}}" mode="aspectFit" bindload="imageLoad"         
-        class=".itemimage" style="height:{{imgheights[current]}}rpx;width:{{imgwidth}}rpx;"/>  
+        <view class="swiper-item {{item}}"></view> 
       </swiper-item>  
     </block>  
   </swiper>  
 </view>  
+
+<!-- items section-->
+<view class ="items_section">
+
+  <view class="items_wrapper" style="flex-direction: row">
+    <view class="items_img_left">
+    </view>
+
+    <view class="items_img_right">
+    </view>
+
+  </view>
+  <view class="items_wrapper" style="flex-direction: row">
+    <view class="items_description_left">
+      <view style="margin: 0rpx 0rpx 0 30rpx;">
+        <text> short description, long description,long description </text>
+      </view>
+      <view style="margin: 10rpx 0 0 90rpx;">
+        <text class="items_money"> ￥12345</text>
+      </view>
+      
+
+    </view>
+    <view class="items_description_right">
+      <view style="margin: 0rpx 0rpx 0 30rpx;">
+        <text> short description, long description,long description </text>
+      </view>
+      <view style="margin: 10rpx 0 0 90rpx;">
+        <text class="items_money"> ￥54321</text>
+      </view>
+    </view>
+  </view>
+
+</view>
+  

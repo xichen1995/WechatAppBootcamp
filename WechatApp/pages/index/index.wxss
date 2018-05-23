@@ -47,6 +47,46 @@
 }
 
  /** menu **/
+.menu_outer {
+  margin-left : 42rpx;
+}
+
+.menu_inner{
+    display:flex;
+    background-color: #FFFFFF;
+}
+
+.menu_item {
+  height: 100rpx;
+  width: 100rpx;
+  margin-right: 42rpx;
+}
+
+.menu_item1 {
+  background-color: #1AAD19;
+}
+
+.menu_item2 {
+  background-color: #2782D7;
+}
+
+.menu_item3 {
+  background-color: #FFFF00;
+}
+
+.menu_item4 {
+  background-color: #FF0000;
+}
+
+.menu_item5 {
+  background-color: #000000;
+}
+
+.menu_name{
+  margin-left: 13rpx;
+  margin-right: 54rpx;
+}
+
 .menu_section{
   margin-top: 30rpx;
 }
@@ -55,9 +95,111 @@
 /** swiper **/
 .swiper {  
   width: 100%;
+}
 
+.demo-text-1{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #1AAD19;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+.demo-text-1:before{
+  content: 'A';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.demo-text-2{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #2782D7;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+.demo-text-2:before{
+  content: 'B';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.demo-text-3{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFF00;
+  color: #353535;
+  font-size: 36rpx;
+}
+.demo-text-3:before{
+  content: 'C';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.swiper-item{
+  display: block;
+  height: 150px;
 }
 
 .swiper_section{
   margin-top: 30rpx;
+}
+
+/** items **/
+.items_section{
+  margin-top: 50rpx;
+}
+
+.items_wrapper {
+  display: flex;
+}
+
+.items_img_left {
+  height: 350rpx;
+  width: 370rpx;
+  border-style: solid;
+  border-width: 0 10rpx 0rpx 0;
+  border-color: grey;
+  background-color: #1AAD19;
+}
+
+.items_img_right {
+  height: 350rpx;
+  width: 370rpx;
+  border-style: solid;
+  border-width: 0 0 0 0;
+  border-color: grey;
+  background-color: #2782D7;
+}
+
+.items_description_left{
+  height: 150rpx;
+  width: 370rpx;
+  font-size: 25rpx;
+  border-style: solid;
+  border-width: 0 10rpx 10rpx 0;
+  border-color: grey;
+  
+}
+
+.items_description_right{
+  height: 150rpx;
+  width: 370rpx;
+  font-size: 25rpx;
+  border-style: solid;
+  border-width: 0 0 10rpx 0;
+  border-color: grey;
+
+}
+
+.items_money {
+  color: orangered;
+  font-size: 35rpx;
 }
