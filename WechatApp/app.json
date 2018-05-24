@@ -1,11 +1,32 @@
 {
-  "pages":[
-    "pages/index/index"
+  "pages": [
+    "pages/index/index",
+    "pages/category/school/school",
+    "pages/category/electronic/electronic",
+    "pages/category/furniture/furniture",
+    "pages/category/car/car",
+    "pages/category/game/game"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "二手市场",
-    "navigationBarTextStyle":"black"
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF3B3F",
+    "navigationBarTitleText": "留学寻宝",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Shop",
+        "iconPath": "images/cart.png",
+        "selectedIconPath": "images/cart_HL.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "Me",
+        "iconPath": "images/person.png",
+        "selectedIconPath": "images/person_HL.png"
+      }
+    ]
   }
 }

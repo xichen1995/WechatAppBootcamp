@@ -13,4 +13,34 @@ Page({
     interval: 2500,
     duration: 1000
   },
+
+  redirect_school: function(e){
+    wx.navigateTo({
+      url: '../category/school/school',
+    })
+  },
+
+  redirect_electronic: function (e) {
+    wx.navigateTo({
+      url: '../category/electronic/electronic',
+    })
+  },
+
+  redirect_furniture: function (e) {
+    wx.navigateTo({
+      url: '../category/furniture/furniture',
+    })
+  },
+
+  redirect_car: function (e) {
+    wx.navigateTo({
+      url: '../category/car/car',
+    })
+  },
+
+  redirect_game: function (e) {
+    wx.navigateTo({
+      url: '../category/game/game',
+    })
+  }
 })
